@@ -47,9 +47,10 @@ public class Main {
            System.out.println();
        }
 
-        int[][] intMatrix = new int[5][];
+       int[][] intMatrix = new int[5][];
 
        int matrixSizeCounter = 0;
+        System.out.println();
         System.out.println("intMatrix: ");
         for (int i = 0; i < intMatrix.length; i ++) {
             intMatrix[i] = new int[i + 1];
@@ -72,6 +73,8 @@ public class Main {
                 //System.out.println(intMatrix[i][j] + " " + "i: " + i + ", j: " + j);
             }
         }
+        System.out.println();
+        System.out.println("Matrix converted to Array: ");
         printIntArray(matrixToArr);
 
         // Collection
@@ -85,6 +88,8 @@ public class Main {
         arrayList.add("String 4");
         arrayList.add("String 5");
 
+        System.out.println();
+        System.out.println("ArrayList: ");
         System.out.println(String.join(", ", arrayList));
         arrayList.remove(1);
         System.out.println(String.join(", ", arrayList));
@@ -97,6 +102,9 @@ public class Main {
         linkedList.add("String 4");
 
         linkedList.remove(1);
+
+        System.out.println();
+        System.out.println("LinkedList: ");
         System.out.println(String.join(", ", linkedList));
 
         // HashMap
@@ -105,6 +113,8 @@ public class Main {
         hashMap.put("Key 2", "String for Key 2");
         hashMap.put("Key 3", "String for Key 3");
 
+        System.out.println();
+        System.out.println("HashMap: ");
         System.out.println(hashMap.get("Key 3"));
 
         for (Map.Entry<String,String> pair : hashMap.entrySet())  {
@@ -135,6 +145,9 @@ public class Main {
         //).collect(Collectors.toList());
         // mapValues == mapValues2
         // mapValues3 == mapValues4
+
+        System.out.println();
+        System.out.println("Stream and lambda example:");
         System.out.println(mapValues);
         System.out.println(mapValues2);
 
@@ -154,10 +167,13 @@ public class Main {
         hashSet.add("String 5");
         hashSet.add("String 5");
 
-        System.out.println("HashSet");
+        System.out.println();
+        System.out.println("HashSet:");
         System.out.println(hashSet);
 
         //DZ
+        System.out.println();
+        System.out.println("DZ////////////////");
         String phrase = "Hello from Java";
         Map<Character, Integer> letters = new HashMap<>();
 
@@ -184,7 +200,6 @@ public class Main {
             System.out.println(pair.getKey() + " : " + pair.getValue());
         }
     }
-
 
 
     public static void printIntArray(int[] array) {
